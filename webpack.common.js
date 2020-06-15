@@ -2,6 +2,7 @@ const path = require("path");
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 
 
 module.exports = {
@@ -31,6 +32,9 @@ module.exports = {
     }),
     new MiniCssExtractPlugin({
       filename: "[name].[hash].css"
-    })
+    }),
+    new CopyPlugin([
+      {from: 'assets/favicon.ico', to: ''}
+    ]),
   ]
 };

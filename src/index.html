@@ -1,13 +1,28 @@
-<!DOCTYPE html>
+<!DOCTYPE html >
 <html lang="en">
 <head>
   <title>
-    CV Card
+    David Hermoso - Web developer - Mallorca
   </title>
-  <meta charset="UTF-8"/>
+  <meta charset=" UTF-8"/>
   <meta name="viewport" content="initial-scale=1">
+  <meta name="description"
+        content="Hi! I'm David, from Mallorca. I'm web developer, mainly working in the frontend side with HTML, CSS, Javascript and Typescript.">
+
+  <meta property="og:title" content="David Hermoso - Web developer - Mallorca"/>
+  <meta property="og:type" content="video.movie"/>
+  <meta property="profile:first_name" content="David"/>
+  <meta property="profile:last_name" content="Hermoso"/>
+  <meta property="og:url" content="https://www.juandavidhermoso.es"/>
+  <meta property="og:image" content="https://s3.eu-central-1.amazonaws.com/juandavidhermoso.es/me.jpeg"/>
+  <meta property="og:locale" content="en_GB"/>
+  <meta property="og:description"
+        content="Hi! I'm David, from Mallorca. I'm web developer, mainly working in the frontend side with HTML, CSS, Javascript and Typescript."/>
+  <meta property="og:site_name" content="juandavidhermoso.es"/>
+
   <script src="https://kit.fontawesome.com/2914baf082.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
 <main class="main">
@@ -16,64 +31,47 @@
       <div class="card__profile-picture">
         <img src="https://s3.eu-central-1.amazonaws.com/juandavidhermoso.es/me.jpeg" title="" alt=""/>
       </div>
+      <div class="card__header-data">
+        <h1 class="card__title">
+          David Hermoso
+        </h1>
+        <h2 class="card__subtitle">
+          Web developer
+        </h2>
+        <p class="card__location">
+          Mallorca
+        </p>
+      </div>
     </div>
     <div class="card__body">
-      <div class="card__title">
-        David Hermoso
-      </div>
-      <div class="card__subtitle">
-        Web developer
-      </div>
-      <div class="card__location">
-        Mallorca
-      </div>
       <div class="card__bio">
+        <h3 class="card__section-title">
+          About me
+        </h3>
         <p>
           Hey! I'm David!
         </p>
-        <p>
-          My passions:
+        <div class="card__bio-summary">
+          <p>
+            I'm web developer. My preferred field is the frontend side, but I'm currently working as full-stack.
+          </p>
+          <p>
+            I always dreamed of working in technology, so I'm living my dream.
+          </p>
+          <p>
+            When I'm not working, I like to travel,
+            cycling, going to the beach and walking in the mountains.
+            I love board games and videogames, too.
+          </p>
+          <p>
 
-        <ul>
-          <li class="card__passion">
-            <span class="card__passion-icon">
-              <i class="fas fa-mug-hot"></i>
-            </span>
-            <span class="card__passion-label">
-              Good coffee
-            </span>
-          </li>
-          <li class="card__passion">
-            <span class="card__passion-icon">
-              <i class="fas fa-globe-asia"></i>
-            </span>
-            <span class="card__passion-label">
-              Travelling
-            </span>
-          </li>
-          <li class="card__passion">
-            <span class="card__passion-icon">
-              <i class="fas fa-swimmer"></i>
-            </span>
-            <span class="card__passion-label">
-              Swimming in the sea
-            </span>
-          </li>
-          <li class="card__passion">
-            <span class="card__passion-icon">
-              <i class="fas fa-laptop"></i>
-            </span>
-            <span class="card__passion-label">
-              Building tech stuff
-            </span>
-          </li>
-        </ul>
-        </p>
+          </p>
+        </div>
       </div>
-      <div>
-        <h2 class="card__social-networks-title">
+      <div class="card__social-networks">
+        <h3 class="card__section-title">
           Get in touch!
-        </h2>
+        </h3>
         <div class="card__social-networks-body">
           <a class="card__sn"
              target="_blank"
@@ -91,9 +89,27 @@
             <i class="fab fa-twitter-square"></i>
           </a>
         </div>
+        <a target="_blank" class="btn cta"
+           href="https://s3.eu-central-1.amazonaws.com/juandavidhermoso.es/CV-David-Hermoso.pdf">
+          Download my CV!
+        </a>
       </div>
     </div>
   </div>
 </main>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-53088357-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+
+  gtag('js', new Date());
+
+  gtag('config', 'UA-53088357-4');
+</script>
+
 </body>
 </html>

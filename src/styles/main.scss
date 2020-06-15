@@ -1,9 +1,15 @@
 @import "colors";
 @import "sizes";
+@import "card";
+@import "btn";
 
 *, *:before, *::before, *:after, *::after {
   box-sizing: border-box;
   font-family: 'Play', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
 }
 
 img {
@@ -38,107 +44,9 @@ ul {
     height: 100%;
     background-image: $main_bg_gradient;
   }
-}
 
-.card {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  border-radius: 8px;
-  border: 1px solid;
-  width: 90%;
-  margin: 0 auto;
-  height: fit-content;
-  z-index: 10;
-  background-color: #fff;
-  box-shadow: 0 0 15px 0 #808080;
-
-  &__header {
-    height: 75px;
-  }
-
-  &__profile-picture {
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    img {
-      border-radius: 50%;
-      max-height: 100%;
-      border-left: $profile_picture_border;
-      border-bottom: $profile_picture_border;
-      border-right: $profile_picture_border;
-    }
-  }
-
-  &__body {
-    margin-top: $standard_space;
-    padding: $standard_space;
-  }
-
-  &__title {
-    font-size: 2rem;
-  }
-
-  &__subtitle {
-    font-size: 1.7rem;
-  }
-
-  &__location {
-    font-size: 1.5rem;
-  }
-
-  &__title, &__subtitle, &__location {
-    text-align: center;
-  }
-
-  .card__passion {
-    display: block;
-    margin-top: $standard_space;
-
-    &-icon {
-      margin-right: 0.8rem;
-    }
-
-    &-label {
-      letter-spacing: 1px;
-    }
-  }
-
-  .card__social-networks-body {
-    display: flex;
-    justify-content: space-around;
-  }
-
-  .card__sn {
-    display: block;
-    position: relative;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    font-size: 50px;
-
-    svg {
-      position: absolute;
-      display: block;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-
-      &.fa-linkedin {
-        color: $sn_linkedin;
-      }
-
-      &.fa-github-square {
-        color: $sn_github;
-      }
-
-      &.fa-twitter-square {
-        color: $sn_twitter;
-      }
-    }
+  @media (min-width: 768px) {
+    overflow: hidden;
+    max-height: 100vh;
   }
 }
