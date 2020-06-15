@@ -1,3 +1,4 @@
-# CV card
+# juandavidhermoso.es
 
-CV card using CSS and JS vanilla
+The code of my personal website
+
